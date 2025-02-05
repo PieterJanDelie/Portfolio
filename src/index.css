@@ -1,6 +1,20 @@
+:root {
+  --white: #ffffff;
+  --text-color: #ffffff;
+  --secondary-text-color: #d7d7d7;
+  --primary-color: #6c739a;
+  --primary-color-hover: #5a6081;
+  --secondary-color: #424669;
+  --secondary-color-hover: #2e314a;
+  --background-color: #393d5b;
+  --background-color-hover: #1d1f2e;
+  --accent-color: #f7b079;
+}
+
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  color: #333333;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
