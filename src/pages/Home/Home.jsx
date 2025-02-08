@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import DefaultLayout from "../../layouts/DefaultLayout";
 import "./Home.css";
 
@@ -51,13 +52,12 @@ const Home = () => {
   }
 
   const [displayedText, setDisplayedText] = useState("");
-  const fullText = `<span class="codecolorone">const</span> Person = {
-  <span class="codecolortwo">Name:</span> <span class="codecolorthree">"Pieter-Jan Delie"</span>,
-  <span class="codecolortwo">Studies:</span> [<span class="codecolorthree">"Software Development"</span>,
-  <span class="codecolorfive">"AI"</span>, <span class="codecolorsix">"International Management"</span>]
-};
+  const fullText = `<span class="codecolorone" style="color: #ff0000;">const</span> Person = {
+  <span class="codecolortwo" style="color: #00ff00;">Name:</span> <span class="codecolorthree" style="color: #0000ff;"><a href="/aboutme" class="link">"Pieter-Jan Delie"</a></span>,
+  <span class="codecolortwo" style="color: #00ff00;">Studies:</span> [<span class="codecolorthree" style="color: #0000ff;"><a href="/skillscertification" class="link">"Software Development"</a></span>,
+  <span class="codecolorfive" style="color: #ff00ff;"><a href="/skillscertification" class="link">"AI"</a></span>, <span class="codecolorsix" style="color: #00ffff;"><a href="/skillscertification" class="link">"International Management"</a></span>]};
 
-<span class="codecolorone">Person</span>.say(<span class="codecolorseven">"Let's get in touch!"</span>);`;
+<span class="codecolorone" style="color: #ff0000;">Person</span>.say(<span class="codecolorseven" style="color: #ffff00;"><a href="/contact" class="link">"Let's get in touch!"</a></span>);`;
 
   useEffect(() => {
     let index = 0;
@@ -67,7 +67,7 @@ const Home = () => {
       if (index > fullText.length) {
         clearInterval(interval);
       }
-    }, 50);
+    }, 10);
     return () => clearInterval(interval);
   }, []);
 
