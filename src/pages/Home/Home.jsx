@@ -3,19 +3,6 @@ import DefaultLayout from "../../layouts/DefaultLayout";
 import "./Home.css";
 
 const Home = () => {
-  const images = [
-    { src: require("../../assets/Images/Header/image1.png"), alt: "image1" },
-    { src: require("../../assets/Images/Header/image1.png"), alt: "image1" },
-    { src: require("../../assets/Images/Header/image1.png"), alt: "image1" },
-    { src: require("../../assets/Images/Header/image1.png"), alt: "image1" },
-    { src: require("../../assets/Images/Header/image1.png"), alt: "image1" },
-    { src: require("../../assets/Images/Header/image1.png"), alt: "image1" },
-    { src: require("../../assets/Images/Header/image1.png"), alt: "image1" },
-    { src: require("../../assets/Images/Header/image1.png"), alt: "image1" },
-    { src: require("../../assets/Images/Header/image1.png"), alt: "image1" },
-    { src: require("../../assets/Images/Header/image1.png"), alt: "image1" },
-  ];
-
   const skills = [
     "Java",
     "Javascript",
@@ -48,10 +35,6 @@ const Home = () => {
     "Expo GO",
   ];
 
-  const isPhone = window.innerWidth <= 600;
-
-  const displayedImages = isPhone ? images.slice(0, 5) : images;
-
   const shuffleSkills = (skillsArray) => {
     for (let i = skillsArray.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -60,14 +43,18 @@ const Home = () => {
     return skillsArray;
   };
 
-  const shuffledSkills = shuffleSkills([...skills]).join(", ");
-  const repeatedSkills = new Array(20).fill(shuffledSkills).join(", ");
+  const shuffledSkills = shuffleSkills([...skills]);
+
+  const repeatedSkills = [];
+  while (repeatedSkills.length < 2000) {
+    repeatedSkills.push(...shuffledSkills);
+  }
 
   const [displayedText, setDisplayedText] = useState("");
-  const fullText = `
-<span class="codecolorone">const</span> Person = {
+  const fullText = `<span class="codecolorone">const</span> Person = {
   <span class="codecolortwo">Name:</span> <span class="codecolorthree">"Pieter-Jan Delie"</span>,
-  <span class="codecolortwo">Studies:</span> [<span class="codecolorthree">"Software Development"</span>,<br> <span class="codecolorfive">"AI"</span>, <span class="codecolorsix">"International Management"</span>]
+  <span class="codecolortwo">Studies:</span> [<span class="codecolorthree">"Software Development"</span>,
+  <span class="codecolorfive">"AI"</span>, <span class="codecolorsix">"International Management"</span>]
 };
 
 <span class="codecolorone">Person</span>.say(<span class="codecolorseven">"Let's get in touch!"</span>);`;
@@ -87,33 +74,27 @@ const Home = () => {
   return (
     <div className="homepage">
       <DefaultLayout>
-        <div className="skills-background">{repeatedSkills}</div>
-        <section className="welcome">
-          <div className="welcome-text">
-            <h1>
-              <pre>
-                <code dangerouslySetInnerHTML={{ __html: displayedText }} />
-                <span class="cursor"><span class="transparent">|</span></span>
-              </pre>
-            </h1>
+        <div className="content">
+          <div className="skills-background">
+            {repeatedSkills.map((skill, index) => (
+              <span key={index} className="skill-word">
+                {skill}
+              </span>
+            ))}
           </div>
-          {/*{displayedImages.map((image, index) => (
-            <img
-              key={index}
-              src={image.src}
-              alt={image.alt}
-              className={`floating-image ${
-                index % 2 === 0 ? "top-to-bottom" : "bottom-to-top"
-              }`}
-              style={{
-                left: `${index * 15}%`,
-                top: `${Math.random() * 100}%`,
-                animationDuration: `${Math.random() * 7 + 5}s`,
-                width: isPhone ? "20%" : "10%",
-              }}
-            />
-          ))}*/}
-        </section>
+          <section className="welcome">
+            <div className="welcome-text">
+              <h1>
+                <pre>
+                  <code dangerouslySetInnerHTML={{ __html: displayedText }} />
+                  <span className="cursor">
+                    <span className="transparent">|</span>
+                  </span>
+                </pre>
+              </h1>
+            </div>
+          </section>
+        </div>
       </DefaultLayout>
     </div>
   );
