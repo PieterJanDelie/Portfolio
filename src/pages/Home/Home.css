@@ -144,9 +144,21 @@ h1, pre, code, span, .welcome-text {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .welcome-text {
+    font-size: 1.75em;
+  }
+  .skills-background {
+    font-size: 0.9em;
+  }
+  .skill-word {
+    font-size: 1.25em;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .welcome-text {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
   .skills-background {
     font-size: 0.75em;
@@ -159,6 +171,18 @@ h1, pre, code, span, .welcome-text {
 @media screen and (max-width: 600px) {
   .welcome-text {
     font-size: 1em;
+  }
+  .skills-background {
+    font-size: 0.6em;
+  }
+  .skill-word {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .welcome-text {
+    font-size: 0.5em;
   }
   .skills-background {
     font-size: 0.5em;

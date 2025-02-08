@@ -3,6 +3,7 @@
   background-color: var(--background-color);
   border-bottom: solid 1px var(--accent-color);
   position: relative;
+  width: 100%;
   z-index: 10;
 }
 

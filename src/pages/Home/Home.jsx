@@ -44,10 +44,10 @@ const Home = () => {
     return skillsArray;
   };
 
-  const shuffledSkills = shuffleSkills([...skills]);
 
   const repeatedSkills = [];
   while (repeatedSkills.length < 2000) {
+    const shuffledSkills = shuffleSkills([...skills]);
     repeatedSkills.push(...shuffledSkills);
   }
 
@@ -56,7 +56,7 @@ const Home = () => {
   <span class="codecolortwo" style="color: #00ff00;">Name:</span> <span class="codecolorthree" style="color: #0000ff;"><a href="/aboutme" class="link">"Pieter-Jan Delie"</a></span>,
   <span class="codecolortwo" style="color: #00ff00;">Studies:</span> [<span class="codecolorthree" style="color: #0000ff;"><a href="/skillscertification" class="link">"Software Development"</a></span>,
   <span class="codecolorfive" style="color: #ff00ff;"><a href="/skillscertification" class="link">"AI"</a></span>, <span class="codecolorsix" style="color: #00ffff;"><a href="/skillscertification" class="link">"International Management"</a></span>]};
-
+  
 <span class="codecolorone" style="color: #ff0000;">Person</span>.say(<span class="codecolorseven" style="color: #ffff00;"><a href="/contact" class="link">"Let's get in touch!"</a></span>);`;
 
   useEffect(() => {
