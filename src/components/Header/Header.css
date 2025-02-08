@@ -1,6 +1,9 @@
 .navbar {
   overflow: hidden;
+  background-color: var(--background-color);
   border-bottom: solid 1px var(--accent-color);
+  position: relative;
+  z-index: 10;
 }
 
 .navbar-menu {

@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+.welcome {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.skills-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  font-size: 2em;
+  color: rgba(255, 255, 255, 0.1);
+  white-space: pre-wrap;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  user-select: none;
+}
+
+.welcome-text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  font-size: xx-large;
+  font-family: "Pacifico", cursive;
+}
+
+.floating-image {
+  position: absolute;
+  height: auto;
+}
+
+.homepage {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+.cursor {
+  display: inline-block;
+  width: 10px;
+  background-color: var(--accent-color);
+  animation: blink 1s step-end infinite;
+}
+.transparent {
+  background-color: transparent;
+  color: transparent;
+}
+.codecolorone {
+  color: var(--accent-color);
+}
+.codecolortwo {
+  color: #FF5733;
+}
+.codecolorthree {
+  color: #33FF57;
+}
+.codecolorfour {
+  color: #5733FF;
+}
+.codecolorfive {
+  color: #FF33A1;
+}
+.codecolorsix {
+  color: #33FFF5;
+}
+.codecolorseven {
+  color: #F5FF33;
+}
+
+@keyframes blink {
+  from,
+  to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: var(--accent-color);
+  }
+}
+
+@keyframes topToBottom {
+  0% {
+    top: -51%;
+  }
+  100% {
+    top: 111%;
+  }
+}
+
+@keyframes bottomToTop {
+  0% {
+    top: 111%;
+  }
+  100% {
+    top: -51%;
+  }
+}
+
+.top-to-bottom {
+  animation: topToBottom linear infinite;
+}
+
+.bottom-to-top {
+  animation: bottomToTop linear infinite;
+}
