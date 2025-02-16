@@ -9,3 +9,7 @@
   background-color: var(--background-color);
   z-index: 10;
 }
+
+.footerbox {
+  padding-top: 100px;
+}

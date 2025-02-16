@@ -44,10 +44,11 @@ const Home = () => {
     return skillsArray;
   };
 
+  const sortedSkills = skills.sort();
 
   const repeatedSkills = [];
   while (repeatedSkills.length < 2000) {
-    const shuffledSkills = shuffleSkills([...skills]);
+    const shuffledSkills = shuffleSkills([...sortedSkills]);
     repeatedSkills.push(...shuffledSkills);
   }
 
