@@ -64,48 +64,51 @@ const Project = () => {
                 ))}
               </div>
             </div>
-            {openProject === index && (
-              <div className="project-content">
-                <p>{project.description}</p>
-                {project.images && (
-                  <div className="project-images">
-                    <Carousel showThumbs={true} thumbWidth={80}>
-                      {project.images.map((image, imageIndex) => (
-                        <div key={imageIndex} onClick={() => openModal(image)}>
-                          <img
-                            src={require(`../../assets/Images/Projects/${image.src}`)}
-                            alt={image.alt}
-                            className="project-image"
-                          />
-                        </div>
-                      ))}
-                    </Carousel>
-                  </div>
-                )}
+            <div
+              className={`project-content ${
+                openProject === index ? "open" : ""
+              }`}
+            >
+              <p>{project.description}</p>
+
+              <div className="project-links">
                 {project.link && (
-                  <p>
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Visit Project
-                    </a>
-                  </p>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="live-link"
+                  >
+                    <span className="blinking-dot"></span> See live
+                  </a>
                 )}
                 {project.github && (
-                  <p>
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      View on GitHub
-                    </a>
-                  </p>
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View on GitHub
+                  </a>
                 )}
               </div>
-            )}
+
+              {project.images && (
+                <div className="project-images">
+                  <Carousel showThumbs={true} thumbWidth={80}>
+                    {project.images.map((image, imageIndex) => (
+                      <div key={imageIndex} onClick={() => openModal(image)}>
+                        <img
+                          src={require(`../../assets/Images/Projects/${image.src}`)}
+                          alt={image.alt}
+                          className="project-image"
+                        />
+                      </div>
+                    ))}
+                  </Carousel>
+                </div>
+              )}
+            </div>
           </div>
         ))}
       </div>
