@@ -107,10 +107,13 @@ const Project = () => {
                   </a>
                 )}
               </div>
-
               {project.images && (
                 <div className="project-images">
-                  <Carousel showThumbs={true} thumbWidth={80}>
+                  <Carousel
+                    showThumbs={true}
+                    infiniteLoop={true}
+                    autoPlay
+                  >
                     {project.images.map((image, imageIndex) => (
                       <div key={imageIndex} onClick={() => openModal(image)}>
                         <img
