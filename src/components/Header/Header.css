@@ -7,6 +7,13 @@
   z-index: 10;
 }
 
+.menu-icon {
+  display: none !important;
+  cursor: pointer;
+  color: var(--white);
+  padding: 14px 16px;
+}
+
 .navbar-menu {
   list-style-type: none;
   margin: 0;
@@ -27,7 +34,7 @@
   text-decoration: none;
 }
 
-.navbar-item a:hover{
+.navbar-item a:hover {
   background-color: var(--background-color-hover);
   border-bottom: 2px solid var(--accent-color);
 }
@@ -37,8 +44,15 @@
 }
 
 @media screen and (max-width: 600px) {
+  .menu-icon {
+    display: block !important;
+  }
   .navbar-menu {
+    display: none;
     flex-direction: column;
+  }
+  .navbar-menu.open {
+    display: flex;
   }
   .navbar-item {
     text-align: center;
