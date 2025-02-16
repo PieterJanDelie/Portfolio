@@ -2,15 +2,15 @@
 
 :root {
   --white: #ffffff;
-  --text-color: #ffffff;
-  --secondary-text-color: #d7d7d7;
-  --primary-color: #6c739a;
-  --primary-color-hover: #5a6081;
-  --secondary-color: #424669;
-  --secondary-color-hover: #2e314a;
-  --background-color: #393d5b;
-  --background-color-hover: #1d1f2e;
-  --accent-color: #f7b079;
+  --text-color: #f0f0f0;
+  --secondary-text-color: #d4d4d4;
+  --primary-color: #007acc;
+  --primary-color-hover: #005fa3;
+  --secondary-color: #009e60;
+  --secondary-color-hover: #007a4a;
+  --background-color: #1c1c1c;
+  --background-color-hover: #121212;
+  --accent-color: #ff6b00;
 }
 
 

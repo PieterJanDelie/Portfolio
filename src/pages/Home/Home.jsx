@@ -52,12 +52,12 @@ const Home = () => {
   }
 
   const [displayedText, setDisplayedText] = useState("");
-  const fullText = `<span class="codecolorone" style="color: #ff0000;">const</span> Person = {
-  <span class="codecolortwo" style="color: #00ff00;">Name:</span> <span class="codecolorthree" style="color: #0000ff;"><a href="/aboutme" class="link">"Pieter-Jan Delie"</a></span>,
-  <span class="codecolortwo" style="color: #00ff00;">Studies:</span> [<span class="codecolorthree" style="color: #0000ff;"><a href="/skillscertification" class="link">"Software Development"</a></span>,
-  <span class="codecolorfive" style="color: #ff00ff;"><a href="/skillscertification" class="link">"AI"</a></span>, <span class="codecolorsix" style="color: #00ffff;"><a href="/skillscertification" class="link">"International Management"</a></span>]};
+  const fullText = `<span class="codecolorone" style="color: var(--primary-color);">const</span> Person = {
+  <span class="codecolortwo" style="color: var(--secondary-color);">Name:</span> <span class="codecolorthree" style="color: var(--accent-color);"><a href="/aboutme" class="link">"Pieter-Jan Delie"</a></span>,
+  <span class="codecolortwo" style="color: var(--secondary-color);">Studies:</span> [<span class="codecolorthree" style="color: var(--accent-color);"><a href="/skillscertification" class="link">"Software Development"</a></span>,
+  <span class="codecolorfive" style="color: var(--primary-color-hover);"><a href="/skillscertification" class="link">"AI"</a></span>, <span class="codecolorsix" style="color: var(--secondary-color-hover);"><a href="/skillscertification" class="link">"International Management"</a></span>]};
   
-<span class="codecolorone" style="color: #ff0000;">Person</span>.say(<span class="codecolorseven" style="color: #ffff00;"><a href="/contact" class="link">"Let's get in touch!"</a></span>);`;
+<span class="codecolorone" style="color: var(--primary-color);">Person</span>.say(<span class="codecolorseven" style="color: var(--background-color-hover);"><a href="/contact" class="link">"Let's get in touch!"</a></span>);`;
 
   useEffect(() => {
     let index = 0;
