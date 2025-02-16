@@ -7,6 +7,12 @@ import "./Project.css";
 const Project = () => {
   const projects = [
     {
+      title: "Tijl 801",
+      description: "Test",
+      skills: ["Github.png", "Flask.png", "Python.png", "HTML.png"],
+      status: "construction",
+    },
+    {
       title: "Filou Oostende Portal",
       description:
         "Deze website werd ontwikkeld gedurende mijn stage bij Filou Oostende. Deze draaide op een scherm aan de ingang. De applicatie toont 2 grote delen. Een algemeen deel met Kalender, Team, Stand, Aankomende matchen en een plaats voor Feedback. Daarnaast was er ook nog een Gamecenter. Hierin stonden 7 games die speciaal ontwikkeld zijn voor de fans met een BCO-touch. Op deze manier konden we de fans een unieke beleving geven vanaf het binnentreden van de arena.",
@@ -49,19 +55,28 @@ const Project = () => {
         {projects.map((project, index) => (
           <div key={index} className="project">
             <div
-              className="project-header"
+              className={`project-header ${
+                project.status === "construction" ? "under-construction" : ""
+              }`}
               onClick={() => toggleProject(index)}
             >
-              <h2>{project.title}</h2>
+              <h2>
+                {project.title}{" "}
+                {project.status === "construction" && "(Under Construction)"}
+              </h2>
               <div className="project-skills-circle">
-                {project.skills.sort().map((skill, skillIndex) => (
-                  <img
-                    key={skillIndex}
-                    src={require(`../../assets/Images/Projects/Skills/${skill}`)}
-                    alt={skill}
-                    className="skill-icon-circle"
-                  />
-                ))}
+                {project.skills.sort().map((skill, skillIndex) => {
+                  const skillName = skill.split(".")[0];
+                  return (
+                    <img
+                      key={skillIndex}
+                      src={require(`../../assets/Images/Projects/Skills/${skill}`)}
+                      alt={skillName}
+                      title={skillName}
+                      className="skill-icon-circle"
+                    />
+                  );
+                })}
               </div>
             </div>
             <div

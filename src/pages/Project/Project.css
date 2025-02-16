@@ -30,6 +30,33 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.under-construction {
+  background: repeating-linear-gradient(
+    45deg,
+    black,
+    black 20px,
+    yellow 20px,
+    yellow 40px
+  );
+  color: white;
+}
+
+.under-construction:hover {
+  background: repeating-linear-gradient(
+    45deg,
+    yellow,
+    yellow 20px,
+    black 20px,
+    black 40px
+  );
+}
+
+.under-construction h2 {
+  color: var(--accent-color);
+  background-color: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+}
+
 .project-header:hover {
   background-color: var(--accent-color-dark);
 }
