@@ -9,7 +9,7 @@ const Project = () => {
     {
       title: "Tijl 801",
       description: "Test",
-      skills: ["Github.png", "Flask.png", "Python.png", "HTML.png"],
+      skills: ["Github.png", "React.jpg", "Python.png", "HTML.png"],
       status: "construction",
     },
     {
