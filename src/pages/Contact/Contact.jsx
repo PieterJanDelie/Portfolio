@@ -42,18 +42,23 @@ const Contact = () => {
       </div>
       <div className="contact-container">
         <div className="contact-box">
-          <div className="contact-item">
+          <a href="mailto:pieterjan.delie@gmail.com" className="contact-item">
             <EmailIcon />
             <span className="contact-text">pieterjan.delie@gmail.com</span>
-          </div>
-          <div className="contact-item">
+          </a>
+          <a href="tel:+32478739144" className="contact-item">
             <CallIcon />
             <span className="contact-text">+32478739144</span>
-          </div>
-          <div className="contact-item">
+          </a>
+          <a
+            href="https://www.linkedin.com/in/pieter-jan-delie/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-item"
+          >
             <LinkedInIcon />
             <span className="contact-text">Pieter-Jan Delie</span>
-          </div>
+          </a>
         </div>
         <form className="contact-form" onSubmit={onSubmit}>
           <label htmlFor="name">Naam:</label>

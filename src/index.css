@@ -13,7 +13,6 @@
   --accent-color: #ff6b00;
 }
 
-
 body {
   margin: 0;
   font-family: 'Asap', Arial, sans-serif;
@@ -29,7 +28,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   color: var(--accent-color);
 }
-
 
 .hero {
   background-color: var(--background-color-hover);
