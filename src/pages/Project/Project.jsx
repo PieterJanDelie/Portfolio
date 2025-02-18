@@ -9,7 +9,7 @@ const Project = () => {
     {
       title: "Tijl 801",
       description: "Test",
-      skills: ["Github.png", "React.jpg", "Python.png", "HTML.png"],
+      skills: ["Github.png", "React.png", "Python.png", "HTML.png"],
       status: "construction",
     },
     {
@@ -30,7 +30,7 @@ const Project = () => {
     {
       title: "Custom React CLI",
       description: "Test",
-      skills: ["Github.png", "React.jpg", "Node.jpeg", "Javascript.jpg"],
+      skills: ["Github.png", "React.png", "Node.png", "Javascript.png"],
     },
   ];
 
@@ -68,9 +68,11 @@ const Project = () => {
               }`}
               onClick={() => toggleProject(index)}
             >
-              <h2>
+              <h2 className={`${
+                project.status === "construction" ? "under-construction-title" : ""
+              }`}>
                 {project.title}{" "}
-                {project.status === "construction" && "(Under Construction)"}
+                {project.status === "construction" && "(in progress)"}
               </h2>
               <div className="project-skills-circle">
                 {project.skills.sort().map((skill, skillIndex) => {

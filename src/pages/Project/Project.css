@@ -50,6 +50,9 @@
 .under-construction-project {
   border-color: var(--secondary-color);
 }
+.under-construction-title{
+  padding: 0 5px;
+}
 
 .project:hover {
   transform: translateY(-5px);
