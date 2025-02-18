@@ -35,10 +35,10 @@ const Header = () => {
         </li>
         <li
           className={`navbar-item ${
-            currentPath === "/skillscertification" ? "active" : ""
+            currentPath === "/timeline" ? "active" : ""
           }`}
         >
-          <Link to="/skillscertification">Skills & Certification</Link>
+          <Link to="/timeline">Tijdlijn</Link>
         </li>
         <li
           className={`navbar-item ${

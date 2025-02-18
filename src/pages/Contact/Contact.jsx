@@ -31,8 +31,14 @@ const Contact = () => {
 
   return (
     <DefaultLayout>
+      <div className="hero">
+        <h1>Contact</h1>
+        <p>
+          Aarzel niet om mij te contacteren bij vragen, opmerkingen of gewoon
+          voor een gezellige babbel.
+        </p>
+      </div>
       <div className="contact-container">
-        <h2>Contact</h2>
         <form className="contact-form" onSubmit={onSubmit}>
           <label htmlFor="name">Naam:</label>
           <input type="text" id="name" name="name" required />

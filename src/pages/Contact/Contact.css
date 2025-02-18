@@ -16,6 +16,7 @@
 }
 
 .contact-form {
+  margin: 25px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -51,7 +52,7 @@
   background-color: var(--accent-color-dark);
 }
 .white {
-    color: white;
+  color: white;
 }
 
 .contact-info {

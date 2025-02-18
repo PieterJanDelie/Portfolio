@@ -15,7 +15,7 @@ function App() {
         <Route exact path="/aboutme" element={<AboutMe />} />
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/project" element={<Project />} />
-        <Route exact path="/skillscertification" element={<SkillsCertification />} />
+        <Route exact path="/timeline" element={<SkillsCertification />} />
 
         <>Not found</>
         <Route path="/*" element={<PageNotFound />} />

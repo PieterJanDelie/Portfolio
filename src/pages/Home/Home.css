@@ -110,19 +110,10 @@ h1, pre, code, span, .welcome-text {
   color: #ff5733;
 }
 .codecolorthree {
-  color: #33ff57 ;
+  color: var(--secondary-color);
 }
-.codecolorfour {
-  color: #5733ff;
-}
-.codecolorfive {
-  color: #ff33a1;
-}
-.codecolorsix {
-  color: #33fff5;
-}
-.codecolorseven {
-  color: #f5ff33;
+.codecolorfor {
+  color: #ffcc00;
 }
 
 .link {

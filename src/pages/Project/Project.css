@@ -1,21 +1,28 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .projects {
   width: 80%;
   padding: 30px;
   margin: 0 auto;
+  animation: fadeIn 1s ease-in-out;
 }
 
-.project {
-  margin-bottom: 20px;
-  border: 1px solid var(--accent-color);
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .project-header {
@@ -28,6 +35,25 @@
   align-items: center;
   position: relative;
   transition: background-color 0.3s ease, color 0.3s ease;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.project {
+  margin-bottom: 20px;
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.under-construction-project {
+  border-color: var(--secondary-color);
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .under-construction {
@@ -140,6 +166,21 @@
   margin-right: auto;
 }
 
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.project-image {
+  animation: zoomIn 0.5s ease-in-out;
+}
+
 .selected:hover {
   cursor: zoom-in !important;
 }
@@ -197,6 +238,7 @@
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 999;
   transition: opacity 0.3s ease;
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 .close-button {

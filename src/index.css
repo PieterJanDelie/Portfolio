@@ -18,9 +18,22 @@ body {
   margin: 0;
   font-family: 'Asap', Arial, sans-serif;
   background-color: var(--background-color);
+  font-size: 1.25em;
   color: var(--text-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Cuprum', Arial, sans-serif;
+}
+
+h1 {
+  color: var(--accent-color);
+}
+
+
+.hero {
+  background-color: var(--background-color-hover);
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 1px solid var(--secondary-color);
 }

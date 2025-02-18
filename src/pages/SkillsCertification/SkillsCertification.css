@@ -11,6 +11,9 @@
 .vertical-timeline-element-title {
   color: black;
 }
+.vertical-timeline-element-content {
+  border-top: 5px solid var(--secondary-color);
+}
 
 .timeline {
   margin-top: 20px;
@@ -68,4 +71,10 @@
 
 .vertical-timeline-element--work p {
   color: #000;
+}
+
+@media (max-width: 1170px) {
+  .vertical-timeline-element-date {
+    color: black;
+  }
 }

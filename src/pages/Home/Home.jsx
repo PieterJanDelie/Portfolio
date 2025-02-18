@@ -54,10 +54,10 @@ const Home = () => {
   const [displayedText, setDisplayedText] = useState("");
   const fullText = `<span class="codecolorone"">const</span> Person = {
   <span class="codecolortwo"">Name:</span> <span class="codecolorthree""><a href="/aboutme" class="link">"Pieter-Jan Delie"</a></span>,
-  <span class="codecolortwo"">Studies:</span> [<span class="codecolorthree""><a href="/skillscertification" class="link">"Software Development"</a></span>,
-  <span class="codecolorthree""><a href="/skillscertification" class="link">"AI"</a></span>, <span class="codecolorthree""><a href="/skillscertification" class="link">"International Management"</a></span>]};
+  <span class="codecolortwo"">Studies:</span> [<span class="codecolorthree""><a href="/timeline" class="link">"Software Development"</a></span>,
+  <span class="codecolorthree""><a href="/timeline" class="link">"AI"</a></span>, <span class="codecolorthree""><a href="/timeline" class="link">"International Management"</a></span>]};
   
-<span class="codecolorone"">Person</span>.say(<span class="codecolorseven""><a href="/contact" class="link">"Let's get in touch!"</a></span>);`;
+<span class="codecolorone"">Person</span>.say(<span class="codecolorfor""><a href="/contact" class="link">"Let's get in touch!"</a></span>);`;
 
   useEffect(() => {
     let index = 0;

@@ -51,9 +51,17 @@ const Project = () => {
 
   return (
     <DefaultLayout>
+    <div className="hero">
+      <h1>Project</h1>
+      <p>
+        Dit zijn mijn grootste projecten waar ik trots ben op de realisatie.
+      </p>
+    </div>
       <div className="projects">
         {projects.map((project, index) => (
-          <div key={index} className="project">
+          <div key={index} className={`project ${
+            project.status === "construction" ? "under-construction-project" : ""
+          }`}>
             <div
               className={`project-header ${
                 project.status === "construction" ? "under-construction" : ""

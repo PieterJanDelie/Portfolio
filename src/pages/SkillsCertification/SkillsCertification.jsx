@@ -7,18 +7,18 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import "./SkillsCertification.css";
 import PaidIcon from "@mui/icons-material/Paid";
-import ComputerIcon from '@mui/icons-material/Computer';
-import SchoolIcon from '@mui/icons-material/School';
-import SportsBasketballIcon from '@mui/icons-material/SportsBasketball';
-import SportsKabaddiIcon from '@mui/icons-material/SportsKabaddi';
-import PregnantWomanIcon from '@mui/icons-material/PregnantWoman';
+import ComputerIcon from "@mui/icons-material/Computer";
+import SchoolIcon from "@mui/icons-material/School";
+import SportsBasketballIcon from "@mui/icons-material/SportsBasketball";
+import SportsKabaddiIcon from "@mui/icons-material/SportsKabaddi";
+import PregnantWomanIcon from "@mui/icons-material/PregnantWoman";
 
 const SkillsCertification = () => {
   return (
     <DefaultLayout>
-      <div className="skills-certification">
+      <div className="hero">
         <div className="skillTitle">
-          <h1>Skills & Certification</h1>
+          <h1>Tijdlijn</h1>
           <div className="dropdown">
             <button className="dropbtn">Download CV</button>
             <div className="dropdown-content">
@@ -40,6 +40,8 @@ const SkillsCertification = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="skills-certification">
         <Timeline />
       </div>
     </DefaultLayout>
