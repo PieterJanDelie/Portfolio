@@ -33,7 +33,7 @@ h1 {
 
 .hero {
   background-color: var(--background-color-hover);
-  padding: 20px 0;
+  padding: 20px 10px;
   text-align: center;
   border-bottom: 1px solid var(--secondary-color);
 }

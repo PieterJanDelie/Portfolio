@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import DefaultLayout from "../../layouts/DefaultLayout";
 import "./Contact.css";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import CallIcon from "@mui/icons-material/Call";
+import EmailIcon from "@mui/icons-material/Email";
 
 const Contact = () => {
   const [result, setResult] = useState("");
@@ -31,7 +33,7 @@ const Contact = () => {
 
   return (
     <DefaultLayout>
-      <div className="hero">
+      <div className="hero contacthero">
         <h1>Contact</h1>
         <p>
           Aarzel niet om mij te contacteren bij vragen, opmerkingen of gewoon
@@ -39,6 +41,20 @@ const Contact = () => {
         </p>
       </div>
       <div className="contact-container">
+        <div className="contact-box">
+          <div className="contact-item">
+            <EmailIcon />
+            <span className="contact-text">pieterjan.delie@gmail.com</span>
+          </div>
+          <div className="contact-item">
+            <CallIcon />
+            <span className="contact-text">+32478739144</span>
+          </div>
+          <div className="contact-item">
+            <LinkedInIcon />
+            <span className="contact-text">Pieter-Jan Delie</span>
+          </div>
+        </div>
         <form className="contact-form" onSubmit={onSubmit}>
           <label htmlFor="name">Naam:</label>
           <input type="text" id="name" name="name" required />
@@ -52,26 +68,6 @@ const Contact = () => {
           <button type="submit">Verstuur</button>
         </form>
         {result && <p className="result-message">{result}</p>}
-        <div className="contact-info">
-          <p>
-            Email:{" "}
-            <a href="mailto:pieterjan.delie@gmail.com">
-              pieterjan.delie@gmail.com
-            </a>
-          </p>
-          <p>
-            <a
-              href="https://www.linkedin.com/in/pieter-jan-delie/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="white">
-                <LinkedInIcon />
-              </span>{" "}
-              Pieter-Jan Delie
-            </a>
-          </p>
-        </div>
       </div>
     </DefaultLayout>
   );

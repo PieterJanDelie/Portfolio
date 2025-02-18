@@ -64,8 +64,8 @@
     45deg,
     black,
     black 20px,
-    yellow 20px,
-    yellow 40px
+    rgb(255, 221, 0) 20px,
+    rgb(255, 221, 0) 40px
   );
   color: white;
 }
