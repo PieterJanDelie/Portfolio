@@ -13,9 +13,23 @@ const Project = () => {
       status: "construction",
     },
     {
+      title: "Portfolio",
+      description:
+        "Deze website is mijn eigen CV gegoten in een website. Momenteel bevindt u zich al op deze site. Kijk gerust een rond. Deze website is ontwikkeld met behulp van React. Ik heb namelijk de meeste ervaring in deze programmeertaal. Na enkele jaren zoeken vond ik dit de gemakkelijkste, snelste en duidelijkste taal om in te programmeren.",
+      skills: ["Github.png", "React.png", "Python.png", "HTML.png"],
+      images: [
+        { src: "Portfolio/Home.png", alt: "Homescherm" },
+        { src: "Portfolio/Project.png", alt: "Project" },
+        { src: "Portfolio/AboutMe.png", alt: "About me" },
+        { src: "Portfolio/Timeline.png", alt: "Tijdlijn" },
+        { src: "Portfolio/Contact.png", alt: "Contact" },
+      ],
+      github: "https://github.com/PieterJanDelie/portal",
+    },
+    {
       title: "Filou Oostende Portal",
       description:
-        "Deze website werd ontwikkeld gedurende mijn stage bij Filou Oostende. Deze draaide op een scherm aan de ingang. De applicatie toont 2 grote delen. Een algemeen deel met Kalender, Team, Stand, Aankomende matchen en een plaats voor Feedback. Daarnaast was er ook nog een Gamecenter. Hierin stonden 7 games die speciaal ontwikkeld zijn voor de fans met een BCO-touch. Op deze manier konden we de fans een unieke beleving geven vanaf het binnentreden van de arena.",
+        "Dit project is een portaal ontwikkeld in opdracht van Filou Oostende als onderdeel van een stage en bachelorproef voor de opleiding Toegepaste Informatica, specialisatie software development, aan de hogeschool Vives te Kortrijk. De entertainmentsector is zeer concurrerend, en het wordt steeds moeilijker om professioneel te blijven opereren. Veel aandacht gaat naar grote evenementen en artiesten, terwijl ook vrijwilligers veel evenementen organiseren. Daarom is het belangrijk om fans goed te entertainen zodat ze terugkomen. Dit portaal biedt unieke entertainmentopties die andere clubs niet hebben, wat zorgt voor een extra ervaring voor de fans. Dit helpt de Oostendse basketbalploeg om zich te onderscheiden. Het portaal bevat informatie over het eerste team, foto's van spelers, de kalender, stand, uitslagen, en unieke BCO-spelletjes die alleen hier te spelen zijn en gelinkt zijn aan de basketbalclub. De applicatie is ontwikkeld voor een groot touchscreen en is zo ontworpen dat er niet gescrold hoeft te worden. Het werkt het best in fullscreen. De schermen omvatten onder andere het homescherm, teamgedeelte, kalender, stand, uitslagen, en teaminformatie.",
       skills: ["Github.png", "Flask.png", "Python.png", "HTML.png"],
       images: [
         { src: "FilouOostende/Homescherm.png", alt: "Homescherm" },
@@ -25,7 +39,10 @@ const Project = () => {
         { src: "FilouOostende/Uitslagen.png", alt: "Uitslagen" },
         { src: "FilouOostende/Recensie.png", alt: "Recensie" },
         { src: "FilouOostende/Gamestart.png", alt: "Startscreen of a game" },
-        { src: "FilouOostende/Endgame.png", alt: "Scherm na eindigen van een game" },
+        {
+          src: "FilouOostende/Endgame.png",
+          alt: "Scherm na eindigen van een game",
+        },
         { src: "FilouOostende/Quiz.png", alt: "Quiz" },
         { src: "FilouOostende/Memory.png", alt: "Memory" },
         { src: "FilouOostende/Lingo.png", alt: "Lingo" },
@@ -39,8 +56,10 @@ const Project = () => {
     },
     {
       title: "Custom React CLI",
-      description: "Test",
+      description:
+        "Ik heb mijn eigen CLI-commandos gemaakt. De commando's die ik maak zijn allemaal voor React-projecten. Deze commando's zorger ervoor dat ik sneller een project kan opstarten en ontwikkelen",
       skills: ["Github.png", "React.png", "Node.png", "Javascript.png"],
+      github: "https://github.com/PieterJanDelie/Custom-CLI",
     },
   ];
 
@@ -61,26 +80,35 @@ const Project = () => {
 
   return (
     <DefaultLayout>
-    <div className="hero">
-      <h1>Project</h1>
-      <p>
-        Dit zijn mijn grootste projecten waar ik trots ben op de realisatie.
-      </p>
-    </div>
+      <div className="hero">
+        <h1>Project</h1>
+        <p>
+          Dit zijn mijn grootste projecten waar ik trots ben op het gerealiseerde resultaat.
+        </p>
+      </div>
       <div className="projects">
         {projects.map((project, index) => (
-          <div key={index} className={`project ${
-            project.status === "construction" ? "under-construction-project" : ""
-          }`}>
+          <div
+            key={index}
+            className={`project ${
+              project.status === "construction"
+                ? "under-construction-project"
+                : ""
+            }`}
+          >
             <div
               className={`project-header ${
                 project.status === "construction" ? "under-construction" : ""
               }`}
               onClick={() => toggleProject(index)}
             >
-              <h2 className={`${
-                project.status === "construction" ? "under-construction-title" : ""
-              }`}>
+              <h2
+                className={`${
+                  project.status === "construction"
+                    ? "under-construction-title"
+                    : ""
+                }`}
+              >
                 {project.title}{" "}
                 {project.status === "construction" && "(in progress)"}
               </h2>
@@ -129,11 +157,7 @@ const Project = () => {
               </div>
               {project.images && (
                 <div className="project-images">
-                  <Carousel
-                    showThumbs={true}
-                    infiniteLoop={true}
-                    autoPlay
-                  >
+                  <Carousel showThumbs={true} infiniteLoop={true} autoPlay>
                     {project.images.map((image, imageIndex) => (
                       <div key={imageIndex} onClick={() => openModal(image)}>
                         <img
