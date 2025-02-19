@@ -21,7 +21,7 @@ const AboutMe = () => {
 
   useEffect(() => {
     const updateDimensions = () => {
-      const width = window.innerWidth < 400 ? 100 : window.innerWidth < 550 ? 200 : window.innerWidth < 750 ? 400 : 600;
+      const width = window.innerWidth < 400 ? 100 : window.innerWidth < 550 ? 200 : window.innerWidth < 750 ? 300 : 400;
       const height = width * 0.67;
       setCardDimensions({ width, height });
     };
