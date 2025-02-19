@@ -61,7 +61,7 @@
 }
 
 .skill-word:hover {
-  color: white !important;
+  color:  var(--white) !important;
   z-index: 2;
 }
 
@@ -127,7 +127,7 @@ h1, pre, code, span, .welcome-text {
     background-color: transparent;
   }
   50% {
-    background-color: #fff;
+    background-color:  var(--white);
   }
 }
 

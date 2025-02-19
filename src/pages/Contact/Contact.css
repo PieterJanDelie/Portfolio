@@ -54,7 +54,7 @@
 }
 
 .white {
-  color: white;
+  color:  var(--white);
 }
 
 .contact-info {
@@ -106,7 +106,7 @@
   border-radius: 10px;
   border: 3px solid var(--secondary-color);
   color: var(--accent-color);
-  background-color: white;
+  background-color:  var(--white);
   padding: 10px;
   flex: 1;
   justify-content: center;
