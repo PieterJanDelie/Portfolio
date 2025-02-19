@@ -22,18 +22,21 @@ const SkillsCertification = () => {
           <div className="dropdown">
             <button className="dropbtn">Download CV</button>
             <div className="dropdown-content">
-              <a href="../../assets/Docs/CV/CV_Pieter-Jan_Delie.pdf" download>
+              <a
+                href="../../assets/Docs/CV/CV_Pieter-Jan_Delie.pdf"
+                target="_blank"
+              >
                 CV
               </a>
               <a
                 href="../../assets/Docs/CV/LinkedIn_Pieter-Jan_Delie.pdf"
-                download
+                target="_blank"
               >
                 LinkedIn CV
               </a>
               <a
                 href="../../assets/Docs/CV/CV_Creative_Pieter-Jan_Delie.pdf"
-                download
+                target="_blank"
               >
                 Creatieve CV
               </a>

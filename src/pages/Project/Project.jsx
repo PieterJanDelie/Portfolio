@@ -8,14 +8,15 @@ const Project = () => {
   const projects = [
     {
       title: "Tijl 801",
-      description: "Deze website is bedoeld voor de verhuur te boosten van het appartement Tijl 801. Momenteel wordt deze al verhuurd op de site van immokantoor Era. Door eerder afgesloten contracten mag het appartement niet verhuurd worden op andere platformen. Om deze redenen zal hier dan ook geen boekingssysteem in deze site worden geïntegreerd maar zal voor alle boekingen worden doorverwezen. Momenteel wordt er gewerkt met een fotograaf om de site van de beste kwaliteit foto's te voorzien. Deze website wordt verwacht af te zijn tegen de maart.",
+      description:
+        "Deze website is ontworpen om de verhuur van appartement Tijl 801 te bevorderen. Het appartement wordt momenteel verhuurd via de website van immokantoor Era. Vanwege bestaande contracten mag het appartement niet op andere platforms worden verhuurd. Daarom zal er geen boekingssysteem op deze site worden geïntegreerd en zullen alle boekingen worden doorverwezen. Er wordt momenteel samengewerkt met een fotograaf om de site van hoogwaardige foto's te voorzien. De verwachte opleverdatum van deze website is maart.",
       skills: ["Github.png", "React.png", "Python.png", "HTML.png"],
       status: "construction",
     },
     {
       title: "Portfolio",
       description:
-        "Deze website is mijn eigen CV gegoten in een website. Momenteel bevindt u zich al op deze site. Kijk gerust een rond. Deze website is ontwikkeld met behulp van React. Ik heb namelijk de meeste ervaring in deze programmeertaal. Na enkele jaren zoeken vond ik dit de gemakkelijkste, snelste en duidelijkste taal om in te programmeren.",
+        "Deze website fungeert als mijn online CV. U bevindt zich momenteel op deze site, dus kijk gerust rond. De website is ontwikkeld met React, de programmeertaal waarin ik de meeste ervaring heb. Na jaren van experimenteren vond ik React de meest gebruiksvriendelijke, snelle en duidelijke taal om in te programmeren.",
       skills: ["Github.png", "React.png", "Python.png", "HTML.png"],
       images: [
         { src: "Portfolio/Home.png", alt: "Homescherm" },
@@ -29,7 +30,7 @@ const Project = () => {
     {
       title: "Filou Oostende Portal",
       description:
-        "Dit project is een portaal ontwikkeld in opdracht van Filou Oostende als onderdeel van een stage en bachelorproef voor de opleiding Toegepaste Informatica, specialisatie software development, aan de hogeschool Vives te Kortrijk. De entertainmentsector is zeer concurrerend, en het wordt steeds moeilijker om professioneel te blijven opereren. Veel aandacht gaat naar grote evenementen en artiesten, terwijl ook vrijwilligers veel evenementen organiseren. Daarom is het belangrijk om fans goed te entertainen zodat ze terugkomen. Dit portaal biedt unieke entertainmentopties die andere clubs niet hebben, wat zorgt voor een extra ervaring voor de fans. Dit helpt de Oostendse basketbalploeg om zich te onderscheiden. Het portaal bevat informatie over het eerste team, foto's van spelers, de kalender, stand, uitslagen, en unieke BCO-spelletjes die alleen hier te spelen zijn en gelinkt zijn aan de basketbalclub. De applicatie is ontwikkeld voor een groot touchscreen en is zo ontworpen dat er niet gescrold hoeft te worden. Het werkt het best in fullscreen. De schermen omvatten onder andere het homescherm, teamgedeelte, kalender, stand, uitslagen, en teaminformatie.",
+        "Dit project is een portaal ontwikkeld voor Filou Oostende als onderdeel van mijn stage en bachelorproef voor de opleiding Toegepaste Informatica, specialisatie software development, aan de hogeschool Vives te Kortrijk. De entertainmentsector is zeer concurrerend, en het wordt steeds moeilijker om professioneel te blijven opereren. Veel aandacht gaat naar grote evenementen en artiesten, terwijl ook vrijwilligers veel evenementen organiseren. Daarom is het belangrijk om fans goed te entertainen zodat ze terugkomen. Dit portaal biedt unieke entertainmentopties die andere clubs niet hebben, wat zorgt voor een extra ervaring voor de fans. Dit helpt de Oostendse basketbalploeg om zich te onderscheiden. Het portaal bevat informatie over het eerste team, foto's van spelers, de kalender, stand, uitslagen, en unieke BCO-spelletjes die alleen hier te spelen zijn en gelinkt zijn aan de basketbalclub. De applicatie is ontwikkeld voor een groot touchscreen en is zo ontworpen dat er niet gescrold hoeft te worden. Het werkt het best in fullscreen. De schermen omvatten onder andere het homescherm, teamgedeelte, kalender, stand, uitslagen, en teaminformatie.",
       skills: ["Github.png", "Flask.png", "Python.png", "HTML.png"],
       images: [
         { src: "FilouOostende/Homescherm.png", alt: "Homescherm" },
@@ -57,7 +58,7 @@ const Project = () => {
     {
       title: "Custom React CLI",
       description:
-        "Ik heb mijn eigen CLI-commandos gemaakt. De commando's die ik maak zijn allemaal voor React-projecten. Deze commando's zorger ervoor dat ik sneller een project kan opstarten en ontwikkelen",
+        "Ik heb mijn eigen CLI-commando's ontwikkeld, specifiek voor React-projecten. Deze commando's zorgen ervoor dat ik sneller een project kan opstarten en ontwikkelen.",
       skills: ["Github.png", "React.png", "Node.png", "Javascript.png"],
       github: "https://github.com/PieterJanDelie/Custom-CLI",
     },
@@ -83,7 +84,8 @@ const Project = () => {
       <div className="hero">
         <h1>Project</h1>
         <p>
-          Dit zijn mijn grootste projecten waar ik trots ben op het gerealiseerde resultaat.
+          Dit zijn mijn grootste projecten waar ik trots ben op het
+          gerealiseerde resultaat.
         </p>
       </div>
       <div className="projects">
