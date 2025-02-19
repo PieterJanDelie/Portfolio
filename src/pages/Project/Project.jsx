@@ -51,7 +51,7 @@ const Project = () => {
         { src: "FilouOostende/Would_you_rather.png", alt: "Wat wil je liever" },
         { src: "FilouOostende/Shotgame.png", alt: "Shotgame" },
       ],
-      link: "https://www.example.com",
+      link: "https://portal-production-88bf.up.railway.app/",
       github: "https://github.com/PieterJanDelie/portal",
     },
     {
