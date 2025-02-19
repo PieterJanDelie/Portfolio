@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
-import Analytics from "../components/Analytics/Analytics";
+import { Analytics } from "@vercel/analytics/react"
 
 const DefaultLayout = ({ children, header = true, footer = true }) => {
   return (
