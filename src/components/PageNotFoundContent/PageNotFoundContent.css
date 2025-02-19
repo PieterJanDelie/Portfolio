@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  background-color: #f9f9f9;
   text-align: center;
   padding: 2rem;
 }
@@ -19,12 +18,14 @@
   font-size: 2rem;
   color: #333;
   margin: 0.5rem 0;
+  color: var(--white);
 }
 
 .description {
   font-size: 1.2rem;
   color: #666;
   margin: 1rem 0 2rem;
+  color: var(--white);
 }
 
 .homeButton {

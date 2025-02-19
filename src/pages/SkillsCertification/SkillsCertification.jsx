@@ -29,16 +29,16 @@ const SkillsCertification = () => {
                 CV
               </a>
               <a
-                href="../../assets/Docs/CV/LinkedIn_Pieter-Jan_Delie.pdf"
-                target="_blank"
-              >
-                LinkedIn CV
-              </a>
-              <a
                 href="../../assets/Docs/CV/CV_Creative_Pieter-Jan_Delie.pdf"
                 target="_blank"
               >
                 Creatieve CV
+              </a>
+              <a
+                href="../../assets/Docs/CV/LinkedIn_Pieter-Jan_Delie.pdf"
+                target="_blank"
+              >
+                LinkedIn CV
               </a>
             </div>
           </div>
@@ -55,8 +55,28 @@ const Timeline = () => {
   return (
     <VerticalTimeline animate={true}>
       <VerticalTimelineElement
-        className="vertical-timeline-element--work"
+        className="vertical-timeline-element--work tobefinished"
         date="September 2025"
+        icon={<PaidIcon />}
+      >
+        <h3 className="vertical-timeline-element-title">
+          Afgestudeerd: Banaba International Management
+        </h3>
+        <p>Vives</p>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work tobefinished"
+        date="Augustus 2025"
+        icon={<PaidIcon />}
+      >
+        <h3 className="vertical-timeline-element-title">
+          Afgestudeerd: Artificiële Intelligentie
+        </h3>
+        <p>Vives</p>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        date="Juli 2025"
         icon={<PaidIcon />}
       >
         <h3 className="vertical-timeline-element-title">
@@ -126,7 +146,7 @@ const Timeline = () => {
         icon={<ComputerIcon />}
       >
         <h3 className="vertical-timeline-element-title">
-          Studentenjob bij Skyline Communications
+          Student Software Developer bij Skyline Communications
         </h3>
         <p>Skyline Communication</p>
       </VerticalTimelineElement>
@@ -203,7 +223,7 @@ const Timeline = () => {
         date="27 Mei 2002"
         icon={<PregnantWomanIcon />}
       >
-        <h3 className="vertical-timeline-element-title">Mijn begin</h3>
+        <h3 className="vertical-timeline-element-title">Begin van mijn reis</h3>
         <p>Kortrijk</p>
       </VerticalTimelineElement>
     </VerticalTimeline>

@@ -60,16 +60,16 @@ const AboutMe = () => {
                   CV
                 </a>
                 <a
-                  href="../../assets/Docs/CV/LinkedIn_Pieter-Jan_Delie.pdf"
-                  target="_blank"
-                >
-                  LinkedIn CV
-                </a>
-                <a
                   href="../../assets/Docs/CV/CV_Creative_Pieter-Jan_Delie.pdf"
                   target="_blank"
                 >
                   Creatieve CV
+                </a>
+                <a
+                  href="../../assets/Docs/CV/LinkedIn_Pieter-Jan_Delie.pdf"
+                  target="_blank"
+                >
+                  LinkedIn CV
                 </a>
               </div>
             </div>
@@ -84,8 +84,9 @@ const AboutMe = () => {
             Ik heb een sterke passie voor softwareontwikkeling en geniet ervan
             om projecten van concept tot implementatie uit te werken. Mijn
             ervaring ligt voornamelijk in React, Java en C#, maar ik sta altijd
-            open voor nieuwe technologieën. Vaak programmeer ik terwijl ik een
-            aflevering van FC De Kampioenen kijk.
+            open voor nieuwe technologieën. Vaak programmeer ik tijdens het
+            kijken naar een aflevering van fc de kampioenen. Hieronder mijn
+            favoriete aflevering.
           </p>
           <div className="video-container">
             <iframe
@@ -121,8 +122,7 @@ const AboutMe = () => {
         <section className="sports-section">
           <h2>Vrije tijd</h2>
           <p>
-            Naast mijn passie voor programmeren ben ik een grote sportfan. Ik
-            kijk graag naar voetbal, basketbal en rugby. Ik speel niet alleen
+            Naast mijn passie voor programmeren ben ik een grote sportfan: voetbal, basketbal, rugby, ... Ik speel niet alleen
             zelf, maar coach ook, zodat ik mijn spelplezier kan overbrengen op
             opkomend talent.
           </p>

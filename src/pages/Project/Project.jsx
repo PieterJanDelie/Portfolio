@@ -16,7 +16,7 @@ const Project = () => {
     {
       title: "Portfolio",
       description:
-        "Deze website fungeert als mijn online CV. U bevindt zich momenteel op deze site, dus kijk gerust rond. De website is ontwikkeld met React, de programmeertaal waarin ik de meeste ervaring heb. Na jaren van experimenteren vond ik React de meest gebruiksvriendelijke, snelle en duidelijke taal om in te programmeren.",
+        "Deze website fungeert als mijn online CV. U bevindt zich momenteel op deze site, dus kijk gerust rond. De website is ontwikkeld met React, de programmeertaal waarin ik de meeste ervaring heb. Na jaren van experimenteren, vond ik React de meest gebruiksvriendelijke, snelle en duidelijke taal om in te programmeren.",
       skills: ["Github.png", "React.png", "Python.png", "HTML.png"],
       images: [
         { src: "Portfolio/Home.png", alt: "Homescherm" },
@@ -30,7 +30,7 @@ const Project = () => {
     {
       title: "Filou Oostende Portal",
       description:
-        "Dit project is een portaal ontwikkeld voor Filou Oostende als onderdeel van mijn stage en bachelorproef voor de opleiding Toegepaste Informatica, specialisatie software development, aan de hogeschool Vives te Kortrijk. De entertainmentsector is zeer concurrerend, en het wordt steeds moeilijker om professioneel te blijven opereren. Veel aandacht gaat naar grote evenementen en artiesten, terwijl ook vrijwilligers veel evenementen organiseren. Daarom is het belangrijk om fans goed te entertainen zodat ze terugkomen. Dit portaal biedt unieke entertainmentopties die andere clubs niet hebben, wat zorgt voor een extra ervaring voor de fans. Dit helpt de Oostendse basketbalploeg om zich te onderscheiden. Het portaal bevat informatie over het eerste team, foto's van spelers, de kalender, stand, uitslagen, en unieke BCO-spelletjes die alleen hier te spelen zijn en gelinkt zijn aan de basketbalclub. De applicatie is ontwikkeld voor een groot touchscreen en is zo ontworpen dat er niet gescrold hoeft te worden. Het werkt het best in fullscreen. De schermen omvatten onder andere het homescherm, teamgedeelte, kalender, stand, uitslagen, en teaminformatie.",
+        "Dit project is een portaal ontwikkeld voor Filou Oostende als onderdeel van mijn stage en bachelorproef voor de opleiding Toegepaste Informatica, specialisatie software development, aan de hogeschool Vives te Kortrijk. De entertainmentsector is zeer concurrerend. Het wordt steeds moeilijker om professioneel te blijven opereren. Veel aandacht gaat naar grote evenementen en artiesten, terwijl ook vrijwilligers veel evenementen organiseren. Daarom is het belangrijk om fans goed te entertainen zodat ze terugkomen. Dit portaal biedt unieke entertainmentopties die andere clubs niet hebben, wat zorgt voor een extra ervaring voor de fans. Dit helpt de Oostendse basketbalploeg om zich te onderscheiden. Het portaal bevat informatie over het eerste team, foto's van spelers, de kalender, stand, uitslagen, en unieke BCO-spelletjes die alleen hier te spelen zijn en gelinkt zijn aan de basketbalclub. De applicatie is ontwikkeld voor een groot touchscreen en is zo ontworpen dat er niet gescrold hoeft te worden. Het werkt het best in fullscreen. De schermen omvatten onder andere het homescherm, teamgedeelte, kalender, stand, uitslagen, en teaminformatie.",
       skills: ["Github.png", "Flask.png", "Python.png", "HTML.png"],
       images: [
         { src: "FilouOostende/Homescherm.png", alt: "Homescherm" },
@@ -144,7 +144,7 @@ const Project = () => {
                     rel="noopener noreferrer"
                     className="live-link"
                   >
-                    <span className="blinking-dot"></span> See live
+                    <span className="blinking-dot"></span> Kijk live
                   </a>
                 )}
                 {project.github && (
@@ -153,7 +153,7 @@ const Project = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    View on GitHub
+                    Kijk op GitHub
                   </a>
                 )}
               </div>

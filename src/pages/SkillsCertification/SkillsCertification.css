@@ -73,6 +73,10 @@
   color: #000;
 }
 
+.tobefinished  .vertical-timeline-element-content h3{
+  color: rgb(92, 91, 91) !important;
+}
+
 @media (max-width: 1170px) {
   .vertical-timeline-element-date {
     color: black;
