@@ -21,7 +21,7 @@ const AboutMe = () => {
 
   useEffect(() => {
     const updateDimensions = () => {
-      const width = window.innerWidth < 500 ? 200 : window.innerWidth < 700 ? 400 : 600;
+      const width = window.innerWidth < 400 ? 100 : window.innerWidth < 550 ? 200 : window.innerWidth < 750 ? 400 : 600;
       const height = width * 0.67;
       setCardDimensions({ width, height });
     };
@@ -50,7 +50,7 @@ const AboutMe = () => {
       <section className="about-content">
         <AboutSection
           title="Wie ben ik?"
-          content="Ik heb een sterke passie voor softwareontwikkeling en geniet ervan om projecten van concept tot implementatie uit te werken. Mijn ervaring ligt voornamelijk in React, Java en C#, maar ik sta altijd open voor nieuwe technologieën. Vaak programmeer ik tijdens het kijken naar een aflevering van FC De Kampioenen. Hieronder mijn favoriete aflevering."
+          content="Hallo! Ik ben Pieter-Jan, een student softwaredevelopment die ervan geniet om projecten van concept tot implementatie uit te werken. Mijn ervaring ligt voornamelijk in React, Java en C#, maar ik sta altijd open voor nieuwe technologieën. Vaak programmeer ik tijdens het kijken naar een aflevering van FC De Kampioenen. Hieronder mijn favoriete aflevering."
         />
         <VideoEmbed src="https://www.youtube.com/embed/cuW9ZpoVNgs?si=vG9w6MBx38KukmDJ" />
         
