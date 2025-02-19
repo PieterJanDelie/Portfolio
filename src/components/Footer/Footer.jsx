@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="footerbox">
       <footer className="footer">
-        <p>&copy; {currentYear} My Website</p>
+        <p>&copy; {currentYear} - Pieter-Jan Delie</p>
       </footer>
     </div>
   );

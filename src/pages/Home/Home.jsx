@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import DefaultLayout from "../../layouts/DefaultLayout";
+import SkillBackground from "../../components/Skillbackground/Skillbackground";
 import "./Home.css";
 
 const Home = () => {
@@ -35,21 +36,23 @@ const Home = () => {
     "Expo GO",
   ];
 
-  const shuffleSkills = (skillsArray) => {
-    for (let i = skillsArray.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [skillsArray[i], skillsArray[j]] = [skillsArray[j], skillsArray[i]];
+  // Shuffle skills using useMemo for better performance
+  const shuffledSkills = useMemo(() => {
+    const shuffleSkills = (skillsArray) => {
+      for (let i = skillsArray.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [skillsArray[i], skillsArray[j]] = [skillsArray[j], skillsArray[i]];
+      }
+      return skillsArray;
+    };
+    const sortedSkills = skills.sort();
+    const repeatedSkills = [];
+    while (repeatedSkills.length < 2000) {
+      const shuffled = shuffleSkills([...sortedSkills]);
+      repeatedSkills.push(...shuffled);
     }
-    return skillsArray;
-  };
-
-  const sortedSkills = skills.sort();
-
-  const repeatedSkills = [];
-  while (repeatedSkills.length < 2000) {
-    const shuffledSkills = shuffleSkills([...sortedSkills]);
-    repeatedSkills.push(...shuffledSkills);
-  }
+    return repeatedSkills;
+  }, [skills]);
 
   const [displayedText, setDisplayedText] = useState("");
   const fullText = `<span class="codecolorone"">const</span> Person = {
@@ -75,13 +78,7 @@ const Home = () => {
     <div className="homepage">
       <DefaultLayout>
         <div className="content">
-          <div className="skills-background">
-            {repeatedSkills.map((skill, index) => (
-              <span key={index} className="skill-word">
-                {skill}
-              </span>
-            ))}
-          </div>
+          <SkillBackground skills={shuffledSkills} />
           <section className="welcome">
             <div className="welcome-text">
               <h1>
