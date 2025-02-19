@@ -1,8 +1,38 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import DefaultLayout from "../../layouts/DefaultLayout";
 import "./AboutMe.css";
+import Stack from "../../components/Stack/Stack";
 
 const AboutMe = () => {
+  const images = [
+    { id: 1, img: "AboutMe/HouseOfAI.jpg" },
+    { id: 2, img: "AboutMe/Zonsondergang.jpg" },
+    { id: 3, img: "AboutMe/PE3.jpeg" },
+    { id: 4, img: "AboutMe/Matties.jpeg" },
+    { id: 5, img: "AboutMe/basket.jpg" },
+    { id: 6, img: "AboutMe/groupHD.jpeg" },
+    { id: 7, img: "AboutMe/Proclamatie.jpg" },
+  ];
+
+  const [cardDimensions, setCardDimensions] = useState({ width: 600, height: 400 });
+
+  useEffect(() => {
+    const updateDimensions = () => {
+      if (window.innerWidth < 500) {
+        setCardDimensions({ width: 200, height: 120 });
+      } else if (window.innerWidth < 700) {
+        setCardDimensions({ width: 400, height: 240 });
+      } else {
+        setCardDimensions({ width: 600, height: 400 });
+      }
+    };
+
+    window.addEventListener("resize", updateDimensions);
+    updateDimensions();
+
+    return () => window.removeEventListener("resize", updateDimensions);
+  }, []);
+
   return (
     <DefaultLayout>
       <div className="hero">
@@ -29,7 +59,7 @@ const AboutMe = () => {
             om projecten van concept tot implementatie uit te werken. Mijn
             ervaring ligt voornamelijk in React, Java en C#, maar ik sta altijd
             open voor nieuwe technologieën. Meestal als ik programmeer, is dat
-            met een aflevering van <strong>FC De Kampioenen</strong>.
+            met een aflevering van FC De Kampioenen.
           </p>
           <div className="video-container">
             <iframe
@@ -56,8 +86,8 @@ const AboutMe = () => {
           <h2>Werkervaring</h2>
           <p>
             Doorheen mijn loopbaan heb ik bij bedrijven zoals{" "}
-            <strong>Skyline Communications, Barco</strong> en
-            <strong> Filou Oostende</strong> gewerkt als student. Ik heb diverse
+            Skyline Communications, Barco en
+            Filou Oostende gewerkt als student. Ik heb diverse
             applicaties gebouwd, gaande van mail-analyse tools tot interactieve
             gamecenters (zie ook de pagina projecten).
           </p>
@@ -72,10 +102,13 @@ const AboutMe = () => {
             opkomend talent.
           </p>
           <div className="sports-image">
-            <img
-              src={require(`../../assets/Images/AboutMe/basket.jpg`)}
-              alt="Basketbal"
+            <Stack
               className="basket-image"
+              randomRotation={true}
+              sensitivity={180}
+              cardsData={images}
+              sendToBackOnClick={true}
+              cardDimensions={cardDimensions}
             />
           </div>
         </section>

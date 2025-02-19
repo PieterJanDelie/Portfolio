@@ -8,7 +8,7 @@ const Project = () => {
   const projects = [
     {
       title: "Tijl 801",
-      description: "Test",
+      description: "Deze website is bedoeld voor de verhuur te boosten van het appartement Tijl 801. Momenteel wordt deze al verhuurd op de site van immokantoor Era. Door eerder afgesloten contracten mag het appartement niet verhuurd worden op andere platformen. Om deze redenen zal hier dan ook geen boekingssysteem in deze site worden geïntegreerd maar zal voor alle boekingen worden doorverwezen. Momenteel wordt er gewerkt met een fotograaf om de site van de beste kwaliteit foto's te voorzien. Deze website wordt verwacht af te zijn tegen de maart.",
       skills: ["Github.png", "React.png", "Python.png", "HTML.png"],
       status: "construction",
     },
