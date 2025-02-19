@@ -1,12 +1,14 @@
 import React from "react";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
+import Analytics from "../components/Analytics/Analytics";
 
 const DefaultLayout = ({ children, header = true, footer = true }) => {
   return (
     <div>
       {header && <Header />}
-      <main style={{ minHeight: "80vh"}}>{children}</main>
+      <Analytics />
+      <main style={{ minHeight: "80vh" }}>{children}</main>
       {footer && <Footer />}
     </div>
   );
