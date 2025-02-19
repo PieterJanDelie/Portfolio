@@ -125,6 +125,13 @@
   text-decoration: none;
 }
 
+@media (max-width: 860px) {
+  .contact-box {
+    margin-bottom: 60px;
+    margin-top: -55px;
+  }
+}
+
 @media (max-width: 760px) {
   .contact-box {
     flex-direction: row;
@@ -143,6 +150,6 @@
 
 @media (max-width: 432px) {
   .contact-box {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
   }
 }
