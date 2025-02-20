@@ -1,66 +1,54 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect } from "react";
 import DefaultLayout from "../../layouts/DefaultLayout";
 import SkillBackground from "../../components/Skillbackground/Skillbackground";
 import "./Home.css";
 
+const skills = [
+  "Java",
+  "Javascript",
+  "React",
+  "C#",
+  "Kotlin",
+  "Angular",
+  "HTML5",
+  "CSS",
+  "Python",
+  "Node",
+  "Docker",
+  "K8s",
+  "Machine learning",
+  "Deep learning",
+  "Google cloud console",
+  "MariaDB",
+  "MySQL",
+  "PostgreSQL",
+  "MongoDB",
+  "Firebase",
+  "Git",
+  "Github",
+  "Rest API",
+  "Flask",
+  "FastAPI",
+  "Spring",
+  "asp .net",
+  "React-native",
+  "Expo GO",
+];
+
+// Maak een lange lijst zodat de achtergrond volledig gevuld is
+const repeatedSkills = Array.from(
+  { length: 2000 },
+  (_, i) => skills[i % skills.length]
+);
+
 const Home = () => {
-  const skills = [
-    "Java",
-    "Javascript",
-    "React",
-    "C#",
-    "Kotlin",
-    "Angular",
-    "HTML5",
-    "CSS",
-    "Python",
-    "Node",
-    "Docker",
-    "K8s",
-    "Machine learning",
-    "Deep learning",
-    "Google cloud console",
-    "MariaDB",
-    "MySQL",
-    "PostgreSQL",
-    "MongoDB",
-    "Firebase",
-    "Git",
-    "Github",
-    "Rest API",
-    "Flask",
-    "FastAPI",
-    "Spring",
-    "asp .net",
-    "React-native",
-    "Expo GO",
-  ];
-
-  // Shuffle skills using useMemo for better performance
-  const shuffledSkills = useMemo(() => {
-    const shuffleSkills = (skillsArray) => {
-      for (let i = skillsArray.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [skillsArray[i], skillsArray[j]] = [skillsArray[j], skillsArray[i]];
-      }
-      return skillsArray;
-    };
-    const sortedSkills = skills.sort();
-    const repeatedSkills = [];
-    while (repeatedSkills.length < 2000) {
-      const shuffled = shuffleSkills([...sortedSkills]);
-      repeatedSkills.push(...shuffled);
-    }
-    return repeatedSkills;
-  }, [skills]);
-
   const [displayedText, setDisplayedText] = useState("");
-  const fullText = `<span class="codecolorone"">const</span> Person = {
-  <span class="codecolortwo"">Name:</span> <span class="codecolorthree""><a href="/aboutme" class="link">"Pieter-Jan Delie"</a></span>,
-  <span class="codecolortwo"">Studies:</span> [<span class="codecolorthree""><a href="/timeline" class="link">"Software Development"</a></span>,
-  <span class="codecolorthree""><a href="/timeline" class="link">"AI"</a></span>, <span class="codecolorthree""><a href="/timeline" class="link">"International Management"</a></span>]};
+  const fullText = `<span class="codecolorone">const</span> Person = {
+  <span class="codecolortwo">Name:</span> <span class="codecolorthree"><a href="/aboutme" class="link">"Pieter-Jan Delie"</a></span>,
+  <span class="codecolortwo">Studies:</span> [<span class="codecolorthree"><a href="/timeline" class="link">"Software Development"</a></span>,
+  <span class="codecolorthree"><a href="/timeline" class="link">"AI"</a></span>, <span class="codecolorthree"><a href="/timeline" class="link">"International Management"</a></span>]};
   
-<span class="codecolorone"">Person</span>.say(<span class="codecolorfor""><a href="/contact" class="link">"Let's get in touch!"</a></span>);`;
+<span class="codecolorone">Person</span>.say(<span class="codecolorfor"><a href="/contact" class="link">"Let's get in touch!"</a></span>);`;
 
   useEffect(() => {
     let index = 0;
@@ -78,7 +66,8 @@ const Home = () => {
     <div className="homepage">
       <DefaultLayout>
         <div className="content">
-          <SkillBackground skills={shuffledSkills} />
+          {/* Losgekoppelde SkillBackground met voldoende skills */}
+          <MemoizedSkillBackground />
           <section className="welcome">
             <div className="welcome-text">
               <h1>
@@ -96,5 +85,10 @@ const Home = () => {
     </div>
   );
 };
+
+// Zorg dat SkillBackground niet opnieuw rendert
+const MemoizedSkillBackground = React.memo(() => (
+  <SkillBackground skills={repeatedSkills} />
+));
 
 export default Home;
