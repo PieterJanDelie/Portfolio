@@ -66,19 +66,24 @@ const AboutMe = () => {
           content="Hallo! Ik ben Pieter-Jan, een student softwaredevelopment die ervan geniet om projecten van concept tot implementatie uit te werken. Mijn ervaring ligt voornamelijk in React, Java en C#, maar ik sta altijd open voor nieuwe technologieën. Vaak programmeer ik tijdens het kijken naar een aflevering van FC De Kampioenen. Hieronder mijn favoriete aflevering."
         />
         <VideoEmbed src="https://www.youtube.com/embed/C9mLR4IBOJs?si=f-3oEacxEG9mZ0bk" />
+        
+        <AboutSection
+          title="Welke job zoek ik?"
+          content="Momenteel ben ik op zoek naar een fullstack job, omdat ik graag projecten van begin tot eind opvolg. Door mijn verschillende studentenjobs heb ik ontdekt dat ik het best tot mijn recht kom in een kleine tot middelgrote onderneming, waar ik meer impact kan maken en een breder takenpakket heb."
+        />
 
         <AboutSection
-          title="Opleiding"
+          title="Welke opleidingen volgde ik?"
           content="Momenteel volg ik de Banaba International Management en de Bachelor Toegepaste Informatica Artificiële Intelligentie. In 2024 studeerde ik af in de Bachelor Toegepaste Informatica Software Development aan Hogeschool VIVES."
         />
 
         <AboutSection
-          title="Werkervaring"
+          title="Welke werkervaring heb ik?"
           content="Tijdens mijn loopbaan heb ik als student gewerkt bij bedrijven zoals Skyline Communications, Barco en Filou Oostende. Ik heb diverse applicaties gebouwd, variërend van mail-analysetools tot interactieve gamecenters (zie ook de pagina projecten)."
         />
 
         <section className="sports-section">
-          <h2>Vrije tijd</h2>
+          <h2>Wat doe ik in mijn vrije tijd?</h2>
           <p>
             Naast mijn passie voor programmeren ben ik een grote sportfan:
             voetbal, basketbal, rugby, ... Ik speel niet alleen zelf, maar coach
