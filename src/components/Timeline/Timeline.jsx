@@ -64,14 +64,6 @@ const Timeline = () => {
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
-        date="Juni 2023 - juli 2023"
-        icon={<SchoolIcon />}
-      >
-        <h3 className="vertical-timeline-element-title">Honours degree</h3>
-        <p>Vives</p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
         date="juni 2024 - augustus 2024"
         icon={<ComputerIcon />}
       >
@@ -79,6 +71,14 @@ const Timeline = () => {
           Student Software Developer bij Skyline Communications
         </h3>
         <p>Skyline Communication</p>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        date="Juni 2023 - juli 2023"
+        icon={<SchoolIcon />}
+      >
+        <h3 className="vertical-timeline-element-title">Honours degree</h3>
+        <p>Vives</p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"

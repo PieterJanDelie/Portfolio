@@ -57,7 +57,7 @@ const Project = () => {
     {
       title: "Custom React CLI",
       description:
-        "Tijdens dit project maakte ik heb mijn eigen CLI-commando's voor het React-framework. Deze commando's zorgen ervoor dat ik sneller kan opstarten en developpen.",
+        "Tijdens dit project maakte ik mijn eigen CLI-commando's voor het React-framework. Deze commando's zorgen ervoor dat ik sneller kan opstarten en developpen.",
       skills: ["Github.png", "React.png", "Node.png", "Javascript.png"],
       github: "https://github.com/PieterJanDelie/Custom-CLI",
     },
@@ -83,7 +83,8 @@ const Project = () => {
       <div className="hero">
         <h1>Project</h1>
         <p>
-          Dit zijn mijn grootste projecten. Op elk project ben ik trots op het bereikte resultaat.
+          Dit zijn mijn grootste projecten. Op elk project ben ik trots op het
+          bereikte resultaat.
         </p>
       </div>
       <div className="projects">
