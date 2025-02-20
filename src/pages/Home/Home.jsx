@@ -66,7 +66,6 @@ const Home = () => {
     <div className="homepage">
       <DefaultLayout>
         <div className="content">
-          {/* Losgekoppelde SkillBackground met voldoende skills */}
           <MemoizedSkillBackground />
           <section className="welcome">
             <div className="welcome-text">
@@ -86,7 +85,6 @@ const Home = () => {
   );
 };
 
-// Zorg dat SkillBackground niet opnieuw rendert
 const MemoizedSkillBackground = React.memo(() => (
   <SkillBackground skills={repeatedSkills} />
 ));

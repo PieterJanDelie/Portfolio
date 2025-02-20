@@ -3,7 +3,7 @@ import "./Skillbackground.css";
 
 const SkillBackground = ({ skills }) => {
   return (
-    <div className="skills-background">
+    <div role="presentation" className="skills-background">
       {skills.map((skill, index) => (
         <span key={index} className="skill-word">
           {skill}
