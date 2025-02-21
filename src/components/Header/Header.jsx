@@ -31,7 +31,7 @@ const Header = () => {
             currentPath === "/aboutme" ? "active" : ""
           }`}
         >
-          <Link to="/aboutme">About Me</Link>
+          <Link to="/aboutme">Over mij</Link>
         </li>
         <li
           className={`navbar-item ${
