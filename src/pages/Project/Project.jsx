@@ -6,19 +6,32 @@ import "./Project.css";
 const Project = () => {
   const projects = [
     {
+      title: "Circle",
+      description: "Dit wordt een all-in application voor jouw vriendengroep. Dit wordt zowel een App als website. Elke vriendengroep zal zijn omgeving aanpassen naar hun eigen wensen aan de hand van extenties. Een meer gamergroep kan bv de gameExtentie toevoegen terwijl een andere vriendengroep bv de molExtentie kan toevoegen. Op deze manier wordt er voor elke groep een unieke experience gezorgd.",
+      skills: ["Github.png", "React Native.png", "Java.png", "HTML.png", "Spring boot.png"],
+      status: "construction",
+    },
+    {
       title: "Tijl 801",
       description:
-        "Deze website is ontworpen om de verhuur van appartement Tijl 801 te bevorderen. Het appartement wordt momenteel verhuurd via de website van immokantoor Era. Vanwege bestaande contracten mag het appartement niet op andere platforms worden verhuurd. Daarom zal er geen boekingssysteem op deze site worden geïntegreerd en zullen alle boekingen worden doorverwezen. Er wordt momenteel samengewerkt met een fotograaf om de site van hoogwaardige foto's te voorzien. De verwachte opleverdatum van deze website is maart.",
-      skills: ["Github.png", "React.png", "Python.png", "HTML.png"],
-      status: "construction",
+        "Deze website is ontworpen om de verhuur van appartement Tijl 801 in Nieuwpoort te bevorderen. Het appartement wordt momenteel verhuurd via de website van immokantoor Era. Vanwege bestaande contracten mag het appartement niet op andere platforms worden verhuurd. Daarom is er geen boekingssysteem op deze site geïntegreerd en zal er voor het huren van dit appartement worden doorverwezen naar Era. Er is samengewerkt met een fotograaf om de site van hoogwaardige foto's te voorzien. Om een zo breed mogelijk publiek aan te trekken is deze website beschikbaar in het Nederlands, Frans, Engels en het Duits.",
+      skills: ["Github.png", "React.png", "HTML.png"],
+      images: [
+        { src: "Tijl0801/Homescherm.png", alt: "Homescherm" },
+        { src: "Tijl0801/Location.png", alt: "Locatie pop up" },
+        { src: "Tijl0801/Contacteer.png", alt: "Contacteerscherm" },
+        { src: "Tijl0801/Activiteiten.png", alt: "Bezienswaardighedenscherm" },
+        { src: "Tijl0801/ActiviteitPopUp.png", alt: "ActiviteitPopUp" },
+        { src: "Tijl0801/Frans.png", alt: "Diksmuide Pop up in het Frans" },
+      ],
+      link: ["https://tijl0801.be/"],
     },
     {
       title: "Portfolio",
       description:
         "Deze website fungeert als mijn online CV. U bevindt zich momenteel op deze site, dus kijk gerust rond. De website is ontwikkeld met React, de programmeertaal waarin ik de meeste ervaring heb. Na jaren van experimenteren, vond ik React de meest gebruiksvriendelijke, snelle en duidelijke taal om in te programmeren.",
-      skills: ["Github.png", "React.png", "Python.png", "HTML.png"],
+      skills: ["Github.png", "React.png", "HTML.png"],
       images: [
-        { src: "Portfolio/Home.png", alt: "Homescherm" },
         { src: "Portfolio/Project.png", alt: "Project" },
         { src: "Portfolio/AboutMe.png", alt: "About me" },
         { src: "Portfolio/Timeline.png", alt: "Tijdlijn" },
