@@ -66,10 +66,10 @@ const AboutMe = () => {
           content="Hallo! Ik ben Pieter-Jan, een student softwaredevelopment die ervan geniet om projecten van concept tot implementatie uit te werken. Mijn ervaring ligt voornamelijk in React, Java en C#, maar ik sta altijd open voor nieuwe technologieën. Vaak programmeer ik tijdens het kijken naar een aflevering van FC De Kampioenen. Hieronder mijn favoriete aflevering."
         />
         <VideoEmbed src="https://www.youtube.com/embed/C9mLR4IBOJs?si=f-3oEacxEG9mZ0bk" />
-        
+
         <AboutSection
           title="Welke job zoek ik?"
-          content="Momenteel ben ik op zoek naar een fullstack job, omdat ik graag projecten van begin tot eind opvolg. Door mijn verschillende studentenjobs heb ik ontdekt dat ik het best tot mijn recht kom in een kleine tot middelgrote onderneming, waar ik meer impact kan maken en een breder takenpakket heb."
+          content="k ben op zoek naar een IT-functie waarin ik projecten van begin tot eind kan opvolgen. Daarnaast vind ik het belangrijk om regelmatig in contact te staan met verschillende stakeholders. Zo creëer ik een goede balans tussen technisch werk en communicatie."
         />
 
         <AboutSection
