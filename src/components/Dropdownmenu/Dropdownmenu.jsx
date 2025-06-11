@@ -5,16 +5,6 @@ const DropdownMenu = () => {
   return (
     <div className="dropdown">
       <button className="dropbtn">Download CV</button>
-      <div>
-        <a
-          href={require(`../../assets/Docs/CV/BiometrIQ-Demoraport.pdf`)}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="raport"
-        >
-          raport
-        </a>
-      </div>
       <div className="dropdown-content">
         {[
           "CV.pdf",

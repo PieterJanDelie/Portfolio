@@ -6,6 +6,12 @@ import "./Project.css";
 const Project = () => {
   const projects = [
     {
+      title: "VZW Dashboard",
+      description: "Hier gaat momenteel het meeste van mijn vrije tijd naartoe. Dit project is voor de VZW in eerste instantie voor ticketregistratie + scanning. Dit wordt echter uitgebreid naar een volledig VZW dashboard. Dit dashboard zal de mogelijkheid bieden om ook kosten en extra inkomsten te monitoren per event. Dit platform zal verkocht worden aan steden en gemeentes. Zij zullen dit platform dan gratis kunnen aanbieden aan hun verenigingen. Want laat ons eerlijk zijn, VZW's verdienen toch alle hulp. Het zijn zulke mooie organisaties die zich inzetten voor de maatschappij en vaak met weinig middelen werken. Dit platform zal hen helpen om hun administratie te vereenvoudigen en een mooi overzicht bieden.",
+      skills: ["Github.png", "React.png", "Node.png", "HTML.png"],
+      status: "construction",
+    },
+    {
       title: "Circle",
       description: "Dit wordt een all-in application voor jouw vriendengroep. Dit wordt zowel een App als website. Elke vriendengroep zal zijn omgeving aanpassen naar hun eigen wensen aan de hand van extenties. Een meer gamergroep kan bv de gameExtentie toevoegen terwijl een andere vriendengroep bv de molExtentie kan toevoegen. Op deze manier wordt er voor elke groep een unieke experience gezorgd.",
       skills: ["Github.png", "React Native.png", "Java.png", "HTML.png", "Spring boot.png"],
@@ -64,7 +70,6 @@ const Project = () => {
         { src: "FilouOostende/Would_you_rather.png", alt: "Wat wil je liever" },
         { src: "FilouOostende/Shotgame.png", alt: "Shotgame" },
       ],
-      link: "https://portal-production-88bf.up.railway.app/",
       github: "https://github.com/PieterJanDelie/portal",
     },
     {
