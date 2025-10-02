@@ -5,16 +5,33 @@ import "./Project.css";
 
 const Project = () => {
   const projects = [
-    {
+    /*{
       title: "VZW Dashboard",
       description: "Hier gaat momenteel het meeste van mijn vrije tijd naartoe. Dit project is voor de VZW in eerste instantie voor ticketregistratie + scanning. Dit wordt echter uitgebreid naar een volledig VZW dashboard. Dit dashboard zal de mogelijkheid bieden om ook kosten en extra inkomsten te monitoren per event. Dit platform zal verkocht worden aan steden en gemeentes. Zij zullen dit platform dan gratis kunnen aanbieden aan hun verenigingen. Want laat ons eerlijk zijn, VZW's verdienen toch alle hulp. Het zijn zulke mooie organisaties die zich inzetten voor de maatschappij en vaak met weinig middelen werken. Dit platform zal hen helpen om hun administratie te vereenvoudigen en een mooi overzicht bieden.",
       skills: ["Github.png", "React.png", "Node.png", "HTML.png"],
       status: "construction",
-    },
+    },*/
     {
-      title: "Circle",
-      description: "Dit wordt een all-in application voor jouw vriendengroep. Dit wordt zowel een App als website. Elke vriendengroep zal zijn omgeving aanpassen naar hun eigen wensen aan de hand van extenties. Een meer gamergroep kan bv de gameExtentie toevoegen terwijl een andere vriendengroep bv de molExtentie kan toevoegen. Op deze manier wordt er voor elke groep een unieke experience gezorgd.",
-      skills: ["Github.png", "React Native.png", "Java.png", "HTML.png", "Spring boot.png"],
+      title: "Circle (beta)",
+      description: "Dit is een all-in application voor jouw vriendengroep. Dit wordt zowel een App als website. Elke vriendengroep kan zijn omgeving aanpassen naar hun eigen wensen aan de hand van extenties. Een meer café kan bv de drinkspelletjes toevoegen terwijl een andere vriendengroep bv de molExtentie kan toevoegen. Op deze manier wordt er voor elke groep een unieke experience gezorgd. Momenteel is er een chatfunctie en eventfunctie (voor iedereen), als extra mogelijke uitbreidingen is er een voetbalgokextentie (zonder echt geld maar met opdrachtjes uit te voeren voor muntjes), een FIFA competitie extensie, een darts extensie, een brainrotspelletje extensie en verschillende drinkspelletjes. Er zijn ook enkele partygames zoals Brainrot en Randomizer. Dit is nog maar het begin, er zullen nog veel meer extenties in ontwikkeling zoals een deelrekening (denk aan de app tricount), een wukist (spelletje), chwazi en nog zoveel meer.",
+      skills: ["Github.png", "React Native.png", "firebase.png", "HTML.png"],
+      link: ["https://circle-dun.vercel.app/"],
+      images: [
+        { src: "Circle/login.png", alt: "Login screen" },
+        { src: "Circle/registreer.png", alt: "Register screen" },
+        { src: "Circle/circleselection.png", alt: "Circle selection screen" },
+        { src: "Circle/chat.png", alt: "Chat screen" },
+        { src: "Circle/games.png", alt: "Games screen" },
+        { src: "Circle/darts.png", alt: "Darts screen" },
+        { src: "Circle/Voetbalgokken.png", alt: "Voetbalgokken screen" },
+        { src: "Circle/FIFA.png", alt: "FIFA competitie screen" },
+        { src: "Circle/Drankspelletjes.png", alt: "Drankspelletjes screen" },
+        { src: "Circle/Drinkopoli.png", alt: "Drinkopoli screen" },
+        { src: "Circle/Randomizer.png", alt: "Randomizer screen" },
+        { src: "Circle/Brainrot.png", alt: "Brainrot screen" },
+        { src: "Circle/event.png", alt: "Event screen" },
+        { src: "Circle/instellingen.png", alt: "Instellingen screen" },
+      ],
       status: "construction",
     },
     {
